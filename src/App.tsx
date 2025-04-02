@@ -41,7 +41,7 @@ function App() {
       <>
         Visit{' '}
         <a
-          href="https://mu.ac.in"
+          href="https://mu.ac.in/ug-and-pg-admission-2024"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 underline hover:text-blue-700"
@@ -50,15 +50,28 @@ function App() {
         </a>
       </>
     ),
-    'examination details': 'Examinations are conducted twice a year (Winter and Summer). The schedule is published on the university website one month before exams. Students must register through the MU portal.',
-    'results': 'Results are published on mumresults.in approximately 45 days after examinations. Students can check results using their seat number and mother\'s name.',
+    'examinationDetails' : (
+      <>
+        Examinations are conducted twice a year (Winter and Summer). The schedule is published on the university website one month before exams. Students must register through the MU portal.
+        <br />
+        <a href="https://mu.ac.in/examination" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">
+          Click here for more details
+        </a>
+      </>
+    ),
+    'result' : (
+      <>
+        The results of the examinations are published on the official MU results portal. Students can check their results using their roll number.
+        <br />
+        <a href="https://www.mumresults.in/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">
+          Click here to check results
+        </a>
+      </>
+    ),
     'fee structure': 'Fee structure varies by course and department. Undergraduate programs range from ₹5,000 to ₹25,000 per semester. Postgraduate programs range from ₹15,000 to ₹50,000 per semester.',
     'course information': 'Mumbai University offers over 550 courses across Arts, Commerce, Science, Law, Management, and Technology. Each department has specific eligibility criteria and course duration.',
     'contact support': 'For support, contact: helpdesk@mu.ac.in or call +91-22-2654-3000. Visit the Student Facilitation Center at Kalina Campus for in-person assistance.',
     'help': 'I can assist with information about admissions, examinations, results, fees, courses, and more. Type your query or select from the suggested options.',
-    'admission': 'Mumbai University admissions typically open in June. The process involves online registration, document verification, and entrance exams for specific courses. Visit mumbaiuniversity.ac.in for detailed guidelines.',
-    'exam': 'Examinations are conducted twice a year (Winter and Summer). The schedule is published on the university website one month before exams. Students must register through the MU portal.',
-    'result': 'Results are published on mumresults.in approximately 45 days after examinations. Students can check results using their seat number and mother\'s name.',
     'fee': 'Fee structure varies by course and department. Undergraduate programs range from ₹5,000 to ₹25,000 per semester. Postgraduate programs range from ₹15,000 to ₹50,000 per semester.',
     'course': 'Mumbai University offers over 550 courses across Arts, Commerce, Science, Law, Management, and Technology. Each department has specific eligibility criteria and course duration.',
     'contact': 'For support, contact: helpdesk@mu.ac.in or call +91-22-2654-3000. Visit the Student Facilitation Center at Kalina Campus for in-person assistance.',
