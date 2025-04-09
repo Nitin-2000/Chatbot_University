@@ -52,16 +52,18 @@ function App() {
       <br />
       <strong>For which course do you want to know more?</strong>
       <br />
+      
       <button
         className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
-        onClick={() => alert('Redirecting to UG admissions...')}
-      >
+        onClick={() => window.open('https://mu.ac.in/', '_blank', 'noopener,noreferrer')}      >
         UG Admission
       </button>{' '}
+      
+
       <button
         className="mt-2 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700"
-        onClick={() => alert('Redirecting to PG admissions...')}
-      >
+        onClick={() => window.open('https://mu.ac.in/', '_blank', 'noopener,noreferrer')}      >
+      
         PG Admission
       </button>
     </>
