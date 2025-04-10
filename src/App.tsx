@@ -14,6 +14,10 @@ type SuggestedQuery = {
   text: string;
 };
 
+
+
+
+
 function App() {
   // State for chat visibility and messages
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -36,8 +40,8 @@ function App() {
 
   // Mock database of university information
   const universityInfo = {
-    'admission process': (
-    <>
+    'admission process': 
+    (<>
       Mumbai University admissions typically open in June. The process involves online registration, document verification, and entrance exams for specific courses.
       Visit{' '}
       <a
@@ -55,18 +59,34 @@ function App() {
       
       <button
         className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
-        onClick={() => window.open('https://mu.ac.in/', '_blank', 'noopener,noreferrer')}      >
+        onClick={() => {handleSendMessage('You selected UG Admission');
+        window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}}      >
         UG Admission
       </button>{' '}
       
 
       <button
-        className="mt-2 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700"
-        onClick={() => window.open('https://mu.ac.in/', '_blank', 'noopener,noreferrer')}      >
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}      >
       
         PG Admission
       </button>
+
+
+
+    
+      {/* <button
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => {
+          handleSendMessage('Returning to Main Menu');
+        }}
+      >
+        Return to Main Menu
+      </button> */}
+
     </>
+
+    
   ),
   ug: (
     <>
@@ -81,15 +101,25 @@ function App() {
       </a>
     </>
   ),
+
+
+
     'examinationDetails' : (
       <>
         Examinations are conducted twice a year (Winter and Summer). The schedule is published on the university website one month before exams. Students must register through the MU portal.
         <br />
-        <a href="https://mu.ac.in/examination" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">
-          Click here for more details
-        </a>
+
+        <button
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => {
+        window.open('https://mu.ac.in/examination', '_blank', 'noopener,noreferrer')}}      >
+        Examination Details
+      </button>{' '}
       </>
     ),
+
+
+
     'result' : (
       <>
         The results of the examinations are published on the official MU results portal. Students can check their results using their roll number.
@@ -99,6 +129,9 @@ function App() {
         </a>
       </>
     ),
+
+
+
     'feeStructure': (
   <>
     Fee structure varies by course and department. Undergraduate programs range from ₹5,000 to ₹25,000 per semester. 
@@ -110,6 +143,7 @@ function App() {
 
   </>
 ),
+
 
 'course information': (
   <>
@@ -186,9 +220,14 @@ function App() {
   <>
     You have to visit Mumbai University for your migration certificate
     <br/>
-    <a href="https://mu.migrationcertificate.in/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">
-          Click here to to apply for migration certificate.
-    </a>
+
+    <button
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => window.open('https://mu.migrationcertificate.in/', '_blank', 'noopener,noreferrer')}      >
+      
+      Click here 
+      </button>
+    
 
   </>
 ),
