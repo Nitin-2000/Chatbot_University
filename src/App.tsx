@@ -30,12 +30,12 @@ function App() {
   // Suggested queries
   const suggestedQueries: SuggestedQuery[] = [
     { id: '1', text: 'Admission Process' },
-    { id: '2', text: 'Examination Details' },
+    { id: '2', text: 'Examination' },
     { id: '3', text: 'Results' },
-    { id: '4', text: 'Fee Structure' },
-    { id: '5', text: 'Course Information' },
-    { id: '6', text: 'Contact Support' },
-    { id: '7', text: 'Online Verification' },
+    { id: '4', text: 'convocation' },
+    { id: '5', text: 'migration' },
+    { id: '6', text: 'Online Verification' },
+    
   ];
 
   // Mock database of university information
