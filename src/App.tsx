@@ -63,7 +63,7 @@ function App() {
       <>
         The results of the examinations are published on the official MU results portal. Students can check their results using their roll number.
         <br />
-        <a href="https://www.mumresults.in/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">
+        <a href="http://www.mumresults.in/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">
           Click here to check results
         </a>
       </>
