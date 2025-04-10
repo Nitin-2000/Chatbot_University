@@ -30,19 +30,19 @@ function App() {
   // Suggested queries
   const suggestedQueries: SuggestedQuery[] = [
     { id: '1', text: 'Admission Process' },
-    { id: '2', text: 'Examination' },
+    { id: '2', text: 'Examination Details' },
     { id: '3', text: 'Results' },
-    { id: '4', text: 'convocation' },
-    { id: '5', text: 'migration' },
-    { id: '6', text: 'Online Verification' },
-    
+    { id: '4', text: 'Fee Structure' },
+    { id: '5', text: 'Course Information' },
+    { id: '6', text: 'Contact Support' },
+    { id: '7', text: 'Online Verification' },
   ];
 
   // Mock database of university information
   const universityInfo = {
     'admission process': 
     (<>
-      Mumbai University admissions typically open in June. The process involves online registration, document verification, and entrance exams for specific courses.
+      {/* Mumbai University admissions typically open in June.
       Visit{' '}
       <a
         href="https://mu.ac.in/"
@@ -52,9 +52,9 @@ function App() {
       >
         Mumbai University
       </a>{' '}
-      for detailed guidelines.
-      <br />
-      <strong>For which course do you want to know more?</strong>
+      for detailed guidelines. */}
+      
+      {/* <strong>For which course do you want to know more?</strong>
       <br />
       
       <button
@@ -70,7 +70,73 @@ function App() {
         onClick={() => window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}      >
       
         PG Admission
-      </button>
+      </button>{' '}
+      
+
+      <button
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}      >
+      
+        Diploma
+      </button>{' '}
+      
+      
+      <button
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}      >
+      
+        CET 
+      </button> */}
+
+
+<strong>For which course do you want to know more?</strong>
+<br />
+
+<div className="mt-4 flex flex-col gap-3 w-full max-w-xs">
+  <button
+    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 w-full"
+    onClick={() => {
+      handleSendMessage('UG Admission');
+      window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer');
+    }}
+  >
+    UG Admission
+  </button>
+
+  <button
+    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 w-full"
+    onClick={() => window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}
+  >
+    PG Admission
+  </button>
+
+  <button
+    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 w-full"
+    onClick={() => {
+      setMessages(prev => [
+        ...prev,
+        {
+          id: Date.now().toString(),
+          text: 'Mumbai University offers diploma courses across various disciplines such as management, arts, science, and technology',
+          sender: 'bot',
+          timestamp: new Date(),
+        },
+      ]);
+    }}
+  >
+    Diploma
+  </button>
+
+  <button
+    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 w-full"
+    onClick={() => {handleSendMessage('CET');
+      window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}}
+  >
+    CET
+  </button>
+</div>
+
+
 
 
 
