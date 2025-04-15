@@ -186,15 +186,152 @@ function App() {
 
 
 
+
+/*-----------------------------------------------RESULT START--------------------------------------------------------------------*/ 
+
+
     'result' : (
+     
+
       <>
-        The results of the examinations are published on the official MU results portal. Students can check their results using their roll number.
-        <br />
-        <a href="http://www.mumresults.in/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">
-          Click here to check results
-        </a>
-      </>
+        <strong>which Result do you want to know more?</strong><br /><div className="mt-4 flex flex-col gap-3 w-full max-w-xs">
+          <button
+            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 w-full"
+            onClick={() => window.open('http://www.mumresults.in/', '_blank', 'noopener,noreferrer')}
+          >
+            Reguler
+
+          </button>
+
+
+          <button
+          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 w-full"
+          onClick={() => {
+            setMessages(prev => [
+              ...prev,
+      {
+        id: Date.now().toString(),
+        text: `RPV mans Held in reserve that means you are either passed or failed but due to some problem they withheld your result. 
+        So, in such a scenario you should try to reach the concerned authority of the MU itself.
+        To resolve this and fill out the RPV form, you need to carry the following documents:
+        1.A letter from your college
+        2.Your lower semester marksheet
+        3.Your eligibility status report. `
+                ,
+
+        sender: 'bot',
+        timestamp: new Date(),
+
+              
+            },
+            
+          ]);
+          
+        }}
+      >
+        RLE
+      </button>
+
+
+
+         
+
+          <button
+          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 w-full"
+          onClick={() => {
+            setMessages(prev => [
+              ...prev,
+      {
+        id: Date.now().toString(),
+        text: `RPV mans Held in reserve that means you are either passed or failed but due to some problem they withheld your result. 
+        So, in such a scenario you should try to reach the concerned authority of the MU itself.
+        To resolve this and fill out the RPV form, you need to carry the following documents:
+        1.A letter from your college
+        2.Your lower semester marksheet
+        3.Your eligibility status report. `
+                ,
+
+        sender: 'bot',
+        timestamp: new Date(),
+
+        
+      },
+      
+    ]);
+    
+  }}
+>
+  RPV
+</button>
+
+
+          <button
+                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 w-full"
+                    onClick={() => {
+                      setMessages(prev => [
+                        ...prev,
+                {
+                  id: Date.now().toString(),
+                  text: `RR means Result held in reserve most probabalily due to abscent student.
+                          So, in such a scenario you should try to reach the concerned authority of the MU itself.
+                           To resolve this and fill out the RR form, you need to carry the following documents:
+        1.A letter from your college
+        2.Your lower semester marksheet
+        3.Your eligibility status report.
+    `
+                          ,
+
+                  sender: 'bot',
+                  timestamp: new Date(),
+
+                  
+                },
+                
+              ]);
+              
+            }}
+          >
+            RR
+          </button>
+        </div></>
+
     ),
+
+
+    /*---------------------------------------RESULT  END--------------------------------------------------------------------*/ 
+/*------------------------------------Convocation START--------------------------------------------------------------------*/
+
+
+'Convocation': (
+  <>
+    Fee structure varies by course and department. Undergraduate programs range from ₹5,000 to ₹25,000 per semester. 
+    Postgraduate programs range from ₹15,000 to ₹50,000 per semester.
+    <br/>
+    <a href="https://mu.ac.in/fees-structure" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">
+          Click here to check fee structure
+    </a>
+
+  </>
+),
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
