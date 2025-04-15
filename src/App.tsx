@@ -170,7 +170,7 @@ function App() {
 
 
 
-    'examinationDetails' : (
+    'examination' : (
       <>
         Examinations are conducted twice a year (Winter and Summer). The schedule is published on the university website one month before exams. Students must register through the MU portal.
         <br />
@@ -181,6 +181,38 @@ function App() {
         window.open('https://mu.ac.in/examination', '_blank', 'noopener,noreferrer')}}      >
         Examination Details
       </button>{' '}
+
+      <button
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}      >
+      
+        Passing certificate
+      </button>
+
+      <button
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}      >
+      
+        Special certificate
+      </button>
+
+      <button
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}      >
+      
+       Revaluation
+      </button>
+
+      <button
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => window.open('https://mu.ac.in/ug-and-pg-admission-2024', '_blank', 'noopener,noreferrer')}      >
+      
+        Photocopy
+      </button>
+
+
+
+
       </>
     ),
 
@@ -358,12 +390,12 @@ function App() {
 
   </>
 ),
-    'contact support': 'For support, contact: helpdesk@mu.ac.in or call +91-22-2654-3000. Visit the Student Facilitation Center at Kalina Campus for in-person assistance.',
-    'help': 'I can assist with information about admissions, examinations, results, fees, courses, and more. Type your query or select from the suggested options.',
-    'fee': 'Fee structure varies by course and department. Undergraduate programs range from ₹5,000 to ₹25,000 per semester. Postgraduate programs range from ₹15,000 to ₹50,000 per semester.',
-    'course': 'Mumbai University offers over 550 courses across Arts, Commerce, Science, Law, Management, and Technology. Each department has specific eligibility criteria and course duration.',
-    'contact': 'For support, contact: helpdesk@mu.ac.in or call +91-22-2654-3000. Visit the Student Facilitation Center at Kalina Campus for in-person assistance.',
-    'deadline': 'Application deadlines vary by program. Generally, undergraduate admissions close by end of July, while postgraduate program deadlines extend to August. Check the specific department website for exact dates.',
+    // 'contact support': 'For support, contact: helpdesk@mu.ac.in or call +91-22-2654-3000. Visit the Student Facilitation Center at Kalina Campus for in-person assistance.',
+    // 'help': 'I can assist with information about admissions, examinations, results, fees, courses, and more. Type your query or select from the suggested options.',
+    // 'fee': 'Fee structure varies by course and department. Undergraduate programs range from ₹5,000 to ₹25,000 per semester. Postgraduate programs range from ₹15,000 to ₹50,000 per semester.',
+    // 'course': 'Mumbai University offers over 550 courses across Arts, Commerce, Science, Law, Management, and Technology. Each department has specific eligibility criteria and course duration.',
+    // 'contact': 'For support, contact: helpdesk@mu.ac.in or call +91-22-2654-3000. Visit the Student Facilitation Center at Kalina Campus for in-person assistance.',
+    // 'deadline': 'Application deadlines vary by program. Generally, undergraduate admissions close by end of July, while postgraduate program deadlines extend to August. Check the specific department website for exact dates.',
       
     'scholarship': (
   <>
@@ -384,6 +416,23 @@ function App() {
         <a href="https://mu.ac.in/archives/courses/2074" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">
               Click here to check hostel details.
         </a>
+    
+      </>
+    ),
+
+
+    'online verification': (
+      <>
+        {/* University hostels are available at Kalina and Churchgate campuses. Applications open in May-June. Monthly fees range from ₹3,000 to ₹7,000 depending on room type and facilities. */}
+
+        Click the button below to proceed with online document verification.
+        <br/>
+        <button
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        onClick={() => window.open('https://univ.secur.co.in/University/verification', '_blank', 'noopener,noreferrer')}      >
+      
+        online verification
+      </button>
     
       </>
     ),
