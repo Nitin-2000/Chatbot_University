@@ -50,4 +50,4 @@
 //     'counseling': 'Student counseling services are available at the Student Welfare Department. Free counseling sessions can be booked through the university portal or by visiting the department.',
 //     'calendar': 'The academic calendar typically runs from June to April, with winter break in December and summer break in May. Detailed schedules are published on the university website at the beginning of each academic year.',
 //     'migration': 'You have to visit Mumbai University for your migration certificate',
-//   };
+//   }; q q

@@ -156,6 +156,8 @@
 //       }
 //     }
 
+
+ 
 //     // Find the best match using similarity
 //     let bestMatch = '';
 //     let highestSimilarity = 0;
@@ -408,7 +410,7 @@ import { saveAs } from "file-saver";
 // Types for our chat system
 type Message = {
   id: string;
-  text: string;
+  text: string | JSX.Element;
   sender: "bot" | "user";
   timestamp: Date;
 };
@@ -456,7 +458,7 @@ function App() {
             onClick={() => {
               handleSendMessage("UG Admission");
               window.open(
-                "https://mu.ac.in/ug-and-pg-admission-2024",
+                "https://muugadmission.samarth.edu.in/",
                 "_blank",
                 "noopener,noreferrer"
               );
@@ -469,7 +471,7 @@ function App() {
             className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 w-full"
             onClick={() =>
               window.open(
-                "https://mu.ac.in/ug-and-pg-admission-2024",
+                "https://muadmission.samarth.edu.in/",
                 "_blank",
                 "noopener,noreferrer"
               )
@@ -500,13 +502,13 @@ function App() {
             onClick={() => {
               handleSendMessage("CET");
               window.open(
-                "https://mu.ac.in/ug-and-pg-admission-2024",
+                "https://mu.ac.in/distance-open-learning",
                 "_blank",
                 "noopener,noreferrer"
               );
             }}
           >
-            CET
+            CDOE Distance Education
           </button>
         </div>
 
@@ -663,7 +665,7 @@ function App() {
                 },
               ]);
             }}
-          >  
+          >
             RPV
           </button>
 
@@ -1040,7 +1042,8 @@ function App() {
 
       const botResponseMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: typeof botResponse === "string" ? botResponse : "Link response",
+        text: botResponse,
+        // text: typeof botResponse === "string" ? botResponse : "Link response",
         sender: "bot",
         timestamp: new Date(),
       };
