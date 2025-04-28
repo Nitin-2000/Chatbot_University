@@ -404,6 +404,8 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { MessageCircle, Send, X, ChevronDown, ChevronUp } from "lucide-react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "./firebase";
 import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
 
@@ -622,7 +624,7 @@ function App() {
               )
             }
           >
-            Reguler
+            Regular
           </button>
 
           <button
@@ -748,13 +750,7 @@ function App() {
         </a>
       </>
     ),
-    // 'contact support': 'For support, contact: helpdesk@mu.ac.in or call +91-22-2654-3000. Visit the Student Facilitation Center at Kalina Campus for in-person assistance.',
-    // 'help': 'I can assist with information about admissions, examinations, results, fees, courses, and more. Type your query or select from the suggested options.',
-    // 'fee': 'Fee structure varies by course and department. Undergraduate programs range from ₹5,000 to ₹25,000 per semester. Postgraduate programs range from ₹15,000 to ₹50,000 per semester.',
-    // 'course': 'Mumbai University offers over 550 courses across Arts, Commerce, Science, Law, Management, and Technology. Each department has specific eligibility criteria and course duration.',
-    // 'contact': 'For support, contact: helpdesk@mu.ac.in or call +91-22-2654-3000. Visit the Student Facilitation Center at Kalina Campus for in-person assistance.',
-    // 'deadline': 'Application deadlines vary by program. Generally, undergraduate admissions close by end of July, while postgraduate program deadlines extend to August. Check the specific department website for exact dates.',
-
+    
     scholarship: (
       <>
         Mumbai University offers various scholarships including merit-based,
